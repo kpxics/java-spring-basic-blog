@@ -1,11 +1,12 @@
 package com.pluralsight.blog;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 
 @Controller
 public class BlogController {
 
-    @RequestMapping("/")
+    @RequestMapping
     public String listPosts(ModelMap modelMap){
 
         modelMap.put("title", "Blog Post 1");
